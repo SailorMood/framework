@@ -5,7 +5,7 @@ class Model
 
     public function __construct()
     {
-        $this -> string = "Yeah le MVC !";
+        $this -> string = "Clique-moi, grand fou !";
     }
 }
 
@@ -22,7 +22,7 @@ class View
 
     public function output()
     {
-        return "<p>". $this -> model -> string. "</p>";
+        return "<p><a href='index.php?action=clicked\'>". $this -> model -> string. "</a></p>";
     }
 }
 
