@@ -6,6 +6,9 @@ class Model
     public function __construct()
     {
         $this -> string = "Clique-moi, grand fou !";
+//        $this -> string2 = "Page 1";
+//        $this -> string3 = "Page2";
+//        $this -> string4 = "Retour";
     }
 }
 
@@ -22,7 +25,8 @@ class View
 
     public function output()
     {
-        return "<p><a href='index.php?action=clicked'>". $this -> model -> string. "</a></p>";
+        $url ="<p><a href='index.php?action=clicked'>". $this -> model -> string. "</a></p>";
+        return $url;
     }
 }
 
